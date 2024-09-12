@@ -27,6 +27,10 @@
   margin-top: 20px;
 }
 
+p.sample-text {
+  font-size: 15pt;
+}
+
 .high-contrast-button:focus {
   border: 5px solid yellow;
   background-color: lightblue;
