@@ -9,6 +9,7 @@ function ContrastToggle() {
   const [highContrast, setHighContrast] = useState(false);
 
   const toggleContrast = () => {
+    document.getElementsByTagName("button")[0].setAttribute("aria-pressed", "false");
     setHighContrast(!highContrast);
   };
 
