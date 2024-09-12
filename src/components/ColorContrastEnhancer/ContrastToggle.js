@@ -25,6 +25,8 @@ function ContrastToggle() {
       </button>
 
       <p className="sample-text">This is a sample text to demonstrate contrast toggling.</p>
+      <h1 className="sample-text">This is a sample H1 to demonstrate contrast toggling.</h1>
+      <h3 className="sample-text">This is a sample H3 to demonstrate contrast toggling.</h3>
 
       {/* TODO 1: Add more text elements with varying sizes to test contrast */}
     </div>
