@@ -10,6 +10,12 @@ label {
     margin-bottom: 5px;
 }
 
+#flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 /* TODO 1: Add a clear focus state for keyboard navigation */
 input {
     width: 100%;

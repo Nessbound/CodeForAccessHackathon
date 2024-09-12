@@ -34,13 +34,15 @@ function FormValidation() {
         value={inputValue}
         onChange={handleChange}
       />
-      <button type="submit">Submit</button>
+      <span id = "flex">
       {/* Bug 2: The error message lacks proper accessibility attributes */}
-      {errorMessage && (
-        <span id="error-message" style={{ color: 'red' }}>
-          {errorMessage}
-        </span>
-      )}
+        {errorMessage && (
+          <span id="error-message" style={{ color: 'red' }}>
+            {errorMessage}
+          </span>
+        )}
+        <button type="submit">Submit</button>
+      </span>
       {/* TODO 2: Add success message display */}
     </form>
   );
