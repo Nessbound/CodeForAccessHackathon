@@ -9,7 +9,17 @@ function ContrastToggle() {
   const [highContrast, setHighContrast] = useState(false);
 
   const toggleContrast = () => {
-    document.getElementsByTagName("button")[0].setAttribute("aria-pressed", "false");
+    var toggleButton = document.getElementsByTagName("button")[0];
+
+    toggleButton.setAttribute("aria-pressed", "false");
+
+    if(toggleButton.classList.contains("high-contrast-button")) {
+      toggleButton.classList.remove("high-contrast-button");
+    }
+    else {
+      toggleButton.classList.add("high-contrast-button");
+    }
+
     setHighContrast(!highContrast);
   };
 
@@ -20,6 +30,7 @@ function ContrastToggle() {
         onClick={toggleContrast} 
         aria-pressed="false"
         className="contrast-toggle-button"
+        autoFocus
       >
         {highContrast ? 'Switch to Normal Contrast' : 'Switch to High Contrast'}
       </button>

@@ -27,5 +27,11 @@
   margin-top: 20px;
 }
 
+.high-contrast-button:focus {
+  border: 5px solid yellow;
+  background-color: lightblue;
+  color: black;
+}
+
 /* TODO 4: Add styles for different text sizes to improve readability. */
 
